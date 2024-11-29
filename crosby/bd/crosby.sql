@@ -8,7 +8,6 @@ CREATE TABLE IF NOT EXISTS revendedor(
     email VARCHAR(100) NOT NULL,
     senha CHAR(40) NOT NULL
 );
-DROP TABLE IF EXISTS revendedor;
 
 CREATE TABLE IF NOT EXISTS produto(
 	id_produto INT AUTO_INCREMENT PRIMARY KEY, -- Chave primária.
@@ -16,13 +15,11 @@ CREATE TABLE IF NOT EXISTS produto(
     descricao TEXT,
     preco DECIMAL(10, 2) NOT NULL
 );
-DROP TABLE IF EXISTS produto;
 
 CREATE TABLE IF NOT EXISTS tipo_movimentacao(
     id_tipo INT AUTO_INCREMENT PRIMARY KEY, -- Chave primária.
     nome ENUM('entrada', 'saída') NOT NULL
 );
-DROP TABLE IF EXISTS tipo_movimentacao;
 
 CREATE TABLE IF NOT EXISTS movimentacao(
     id_movimentacao INT AUTO_INCREMENT PRIMARY KEY, -- Chave primária.
@@ -33,4 +30,3 @@ CREATE TABLE IF NOT EXISTS movimentacao(
     FOREIGN KEY (id_produto) REFERENCES produto(id_produto), -- Chave estrangeira.
     FOREIGN KEY (id_tipo) REFERENCES tipo_movimentacao(id_tipo) -- Chave estrangeira.
 );
-DROP TABLE IF EXISTS movimentacao;
