@@ -57,7 +57,7 @@ a.navlink {
     align-items: center;
     background-color: var(--azul);
     width: 500px;
-    height: 370px;
+    height: auto;
     padding: 40px;
     border-radius: 10px;
 }
