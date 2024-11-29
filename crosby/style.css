@@ -43,7 +43,7 @@ a.navlink {
     --azul: #001580;
 }
 
-.area-login {
+.area-login-cadastro {
     display: flex;
     justify-content: center;
     height: 80vh;
@@ -51,7 +51,7 @@ a.navlink {
     align-items: center;
 }
 
-.login {
+.login-cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,14 +62,14 @@ a.navlink {
     border-radius: 10px;
 }
 
-.login form {
+.login-cadastro form {
     display: flex;
     flex-direction: column;
     width: 100%;
 
 }
 
-.login input {
+.login-cadastro input {
     margin-top: 10px;
     background-color: var(--branco);
     border: none;
@@ -79,7 +79,7 @@ a.navlink {
     padding-left: 10px;
 }
 
-.login p {
+.login-cadastro p {
     color: var(--branco);
     color: var(--branco);
     text-decoration: none;
@@ -87,12 +87,12 @@ a.navlink {
     font-size: 14px;
 }
 
-.login img {
+.login-cadastro img {
     width: 150px;
     height: auto;
 }
 
-.login::placeholder {
+.login-cadastro::placeholder {
     color: var(--branco);
     font-size: 14px;
 
