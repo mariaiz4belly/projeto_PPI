@@ -1,0 +1,204 @@
+/* Resetando margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px; /* Aumentando o padding para aumentar a altura */
+    background-color: #0e0742; /* Cor de fundo da navbar */
+    color: white;
+    width:100%;   
+    
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content:center; /* Alinha o logo horizontalmente ao centro */
+    align-items: 100px;     /* Alinha o logo verticalmente ao centro */
+    flex-grow:100;             /* Faz o logo ocupar o espaço disponível entre os itens */
+}
+
+.navbar-logo img {
+    max-width: 500px; /* Tamanho do logo */
+    height:auto 
+
+}
+
+.navbar-title {
+    flex-grow: 1; /* Faz o título ocupar o espaço disponível */
+    text-align: center; /* Centraliza o título */
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #5e72e4; /* Cor de hover dos links */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-title {
+        margin-top: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .navbar-links a {
+        font-size: 18px;
+    }
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilo para o container do formulário */
+.area-login-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-cadastro {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo-container img {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+/* Estilo para os campos do formulário */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #5e72e4;
+    box-shadow: 0 0 5px rgba(94, 114, 228, 0.5);
+}
+
+/* Estilo para o botão */
+.botoes {
+    text-align: center;
+}
+
+.botao {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #5e72e4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #4a60c4;
+}
+
+/* Estilo para o rodapé */
+footer {
+
+    text-align: center;
+    width: 100%;
+
+    
+}
+
+footer .line-footer {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+footer .rodape {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+footer a {
+    color: #5e72e4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
